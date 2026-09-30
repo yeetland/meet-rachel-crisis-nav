@@ -2,16 +2,17 @@ const stops = [
   {
     label: 'Crisis & reputation',
     detail:
-      'Monitoring news, assessing reputational risk, and advising Fortune 500 utility and logistics brands, including guiding one through a high-stakes communications crisis.',
+      'Tracking news and reputational risk for Fortune 500 utility and logistics brands. When a client landed in an AP or Reuters headline (it happened more than once), I dug into what was driving the coverage, wrote up what to watch, and recommended what to do next. That was my favorite part.',
   },
   {
     label: 'Trailheads',
     detail:
-      'Conservation work and backcountry leadership: risk management in its most literal form, where the stakes are real and the plan changes daily.',
+      'Conservation work and backcountry leadership. I built trails, led crews, and practiced risk management in its most literal form, keeping people safe, fed, and motivated in a very dynamic environment.',
   },
   {
     label: 'A growing plant brand',
-    detail: 'Building content, customer strategy, and digital growth for an emerging company from the ground up.',
+    detail:
+      'Writing the content, getting to know the customers, and building digital growth for an emerging company from the ground up.',
   },
 ]
 
