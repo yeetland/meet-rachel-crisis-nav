@@ -2,14 +2,14 @@ const stops = [
   {
     label: 'Newsrooms & boardrooms',
     detail:
-      'Analyzing news and reputation for Fortune 500 companies, including helping PG&E navigate a communications crisis.',
+      'Analyzing news and reputation for Fortune 500 utility and logistics brands, including helping navigate a communications crisis.',
   },
   {
     label: 'Trailheads',
     detail: 'Conservation work and backcountry leadership, where the stakes are real and the plan changes daily.',
   },
   {
-    label: 'A tiny plant brand',
+    label: 'A growing plant brand',
     detail: 'Building content, customer strategy, and digital growth for an emerging company from the ground up.',
   },
 ]
