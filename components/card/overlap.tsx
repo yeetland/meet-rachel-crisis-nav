@@ -1,9 +1,7 @@
-const circles = [
-  { label: 'Research', position: 'left-0 top-0', text: 'items-start justify-start' },
-  { label: 'Writing', position: 'right-0 top-0', text: 'items-start justify-end' },
-  { label: 'People', position: 'left-0 bottom-0', text: 'items-end justify-start' },
-  { label: 'Creative problem-solving', position: 'right-0 bottom-0', text: 'items-end justify-end' },
-]
+const circlePositions = ['left-0 top-0', 'right-0 top-0', 'left-0 bottom-0', 'right-0 bottom-0']
+
+const labelClass =
+  'absolute w-max -translate-x-1/2 text-center font-mono text-[0.7rem] uppercase leading-tight tracking-wider text-muted-foreground'
 
 export function Overlap() {
   return (
@@ -17,23 +15,35 @@ export function Overlap() {
         <div
           role="img"
           aria-label="Four overlapping circles labeled research, writing, people, and creative problem-solving. Rachel sits where all four meet."
-          className="relative mx-auto aspect-square w-full max-w-80"
+          className="mx-auto w-full max-w-80"
         >
-          {circles.map((c) => (
-            <div
-              key={c.label}
-              className={`absolute flex size-[62%] rounded-full border border-foreground/40 p-[11%] ${c.position} ${c.text}`}
-            >
-              <span className="max-w-[7rem] font-mono text-[0.7rem] uppercase leading-tight tracking-wider text-muted-foreground">
-                {c.label}
-              </span>
+          <div aria-hidden="true" className="relative h-8">
+            <span className={`${labelClass} bottom-2 left-[31%]`}>Research</span>
+            <span className={`${labelClass} bottom-2 left-[69%]`}>Writing</span>
+          </div>
+
+          <div className="relative aspect-square w-full">
+            {circlePositions.map((position) => (
+              <div
+                key={position}
+                className={`absolute size-[62%] rounded-full border border-foreground/40 ${position}`}
+              />
+            ))}
+            <div className="absolute left-1/2 top-1/2 flex size-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg">
+              <span className="text-lg italic">me</span>
             </div>
-          ))}
-          <div className="absolute left-1/2 top-1/2 flex size-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg">
-            <span className="text-lg italic">me</span>
+          </div>
+
+          <div aria-hidden="true" className="relative h-10">
+            <span className={`${labelClass} top-2 left-[31%]`}>People</span>
+            <span className={`${labelClass} top-2 left-[69%]`}>
+              Creative
+              <br />
+              problem-solving
+            </span>
           </div>
         </div>
-        <figcaption className="mt-6 text-center font-mono text-xs text-muted-foreground">
+        <figcaption className="mt-4 text-center font-mono text-xs text-muted-foreground">
           {'not to scale. results may vary (in a good way).'}
         </figcaption>
       </figure>

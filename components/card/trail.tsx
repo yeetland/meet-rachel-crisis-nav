@@ -1,12 +1,13 @@
 const stops = [
   {
-    label: 'Newsrooms & boardrooms',
+    label: 'Crisis & reputation',
     detail:
-      'Analyzing news and reputation for Fortune 500 utility and logistics brands, including helping navigate a communications crisis.',
+      'Monitoring news, assessing reputational risk, and advising Fortune 500 utility and logistics brands, including guiding one through a high-stakes communications crisis.',
   },
   {
     label: 'Trailheads',
-    detail: 'Conservation work and backcountry leadership, where the stakes are real and the plan changes daily.',
+    detail:
+      'Conservation work and backcountry leadership: risk management in its most literal form, where the stakes are real and the plan changes daily.',
   },
   {
     label: 'A growing plant brand',

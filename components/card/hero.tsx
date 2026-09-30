@@ -32,6 +32,10 @@ export function Hero() {
           </svg>
         </span>
       </p>
+      <p className="mt-10 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
+        Especially when the stakes are high. Reputation, risk, and crisis communications, plus the content and
+        strategy that build trust before anything goes wrong.
+      </p>
     </section>
   )
 }
