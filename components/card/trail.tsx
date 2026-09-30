@@ -12,7 +12,7 @@ const stops = [
   {
     label: 'A growing plant brand',
     detail:
-      'Writing the content, getting to know the customers, and building digital growth for an emerging company from the ground up.',
+      'Writing the content, getting to know the customers, and building digital growth for an emerging company from the dirt up.',
   },
 ]
 
