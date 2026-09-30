@@ -2,7 +2,7 @@ const stops = [
   {
     label: 'Crisis & reputation',
     detail:
-      'Tracking news and reputational risk for Fortune 500 utility and logistics brands. When a client landed in an AP or Reuters headline (it happened more than once), I dug into what was driving the coverage, wrote up what to watch, and recommended what to do next. That was my favorite part.',
+      'Media intelligence and reputation analysis for Fortune 500 utility and logistics brands. When clients faced negative coverage in national and global outlets, I researched what was driving the story, briefed client teams on where it was headed, and recommended the messaging and issues to monitor. I did this across multiple accounts and crises, turning fast-moving news into clear, usable insight.',
   },
   {
     label: 'Trailheads',
