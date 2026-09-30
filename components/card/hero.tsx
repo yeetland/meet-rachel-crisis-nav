@@ -33,7 +33,7 @@ export function Hero() {
         </span>
       </p>
       <p className="mt-10 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-        Especially when the stakes are high, whether that&apos;s a client trending on Reuters or a sprained ankle
+        Especially when the stakes are high, whether that&apos;s a client headlining national news or a sprained ankle
         eight miles from the trailhead. Crisis comms and risk management, in the boardroom and the backcountry.
         (I&apos;m a Wilderness First Responder, so I pack for both.)
       </p>
