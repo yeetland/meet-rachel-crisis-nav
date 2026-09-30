@@ -35,7 +35,7 @@ export function Hero() {
       <p className="mt-10 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
         Especially when the stakes are high, whether that&apos;s a client headlining national news or a sprained ankle
         eight miles from the trailhead. Crisis comms and risk management, in the boardroom and the backcountry.
-        (I&apos;m a Wilderness First Responder, so I pack for both.)
+        (I&apos;m trained as a Wilderness First Responder, so I pack for both.)
       </p>
     </section>
   )
