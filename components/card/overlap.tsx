@@ -1,3 +1,5 @@
+import { ArrowUpRight } from 'lucide-react'
+
 const circlePositions = ['left-0 top-0', 'right-0 top-0', 'left-0 bottom-0', 'right-0 bottom-0']
 
 const labelClass =
@@ -47,6 +49,24 @@ export function Overlap() {
           {'not to scale. results may vary (in a good way).'}
         </figcaption>
       </figure>
+
+      <p className="mt-8 text-center">
+        <a
+          href="https://rachelelliswrites.wordpress.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex flex-col items-center gap-1"
+        >
+          <span className="font-mono text-[0.65rem] uppercase tracking-widest text-muted-foreground">
+            See it in action
+          </span>
+          <span className="inline-flex items-center gap-1.5 border-b border-accent/50 pb-0.5 text-base italic text-accent transition-colors group-hover:border-accent">
+            rachelelliswrites.wordpress.com
+            <ArrowUpRight aria-hidden="true" className="size-4 shrink-0 transition-transform group-hover:rotate-45" />
+          </span>
+          <span className="sr-only">(opens in a new tab)</span>
+        </a>
+      </p>
     </section>
   )
 }
