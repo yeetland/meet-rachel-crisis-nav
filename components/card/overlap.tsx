@@ -14,59 +14,56 @@ export function Overlap() {
       </h2>
 
       <figure className="mt-10">
-        <div
-          role="img"
-          aria-label="Four overlapping circles labeled research, writing, people, and creative problem-solving. Rachel sits where all four meet."
-          className="mx-auto w-full max-w-80"
+        <a
+          href="https://rachelelliswrites.wordpress.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group mx-auto block w-full max-w-80 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-accent"
         >
-          <div aria-hidden="true" className="relative h-8">
-            <span className={`${labelClass} bottom-2 left-[31%]`}>Research</span>
-            <span className={`${labelClass} bottom-2 left-[69%]`}>Writing</span>
-          </div>
+          <span className="sr-only">
+            Four overlapping circles labeled research, writing, people, and creative problem-solving. Rachel sits
+            where all four meet. Opens Rachel&apos;s writing portfolio in a new tab.
+          </span>
 
-          <div className="relative aspect-square w-full">
-            {circlePositions.map((position) => (
-              <div
-                key={position}
-                className={`absolute size-[62%] rounded-full border border-foreground/40 ${position}`}
-              />
-            ))}
-            <div className="absolute left-1/2 top-1/2 flex size-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg">
-              <span className="text-lg italic">me</span>
+          <div aria-hidden="true">
+            <div className="relative h-8">
+              <span className={`${labelClass} bottom-2 left-[31%]`}>Research</span>
+              <span className={`${labelClass} bottom-2 left-[69%]`}>Writing</span>
+            </div>
+
+            <div className="relative aspect-square w-full">
+              {circlePositions.map((position) => (
+                <div
+                  key={position}
+                  className={`absolute size-[62%] rounded-full border border-foreground/40 transition-colors duration-500 group-hover:border-accent/70 group-focus-visible:border-accent/70 ${position}`}
+                />
+              ))}
+              <div className="absolute left-1/2 top-1/2 grid size-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-accent text-accent-foreground shadow-lg transition-transform duration-300 group-hover:scale-110 group-focus-visible:scale-110">
+                <span className="col-start-1 row-start-1 text-lg italic transition-opacity duration-300 group-hover:opacity-0 group-focus-visible:opacity-0">
+                  me
+                </span>
+                <ArrowUpRight className="col-start-1 row-start-1 size-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100" />
+              </div>
+              <span className="pointer-events-none absolute left-1/2 top-[calc(50%+3rem)] -translate-x-1/2 translate-y-1 whitespace-nowrap rounded-full bg-background px-3 py-1 font-mono text-[0.65rem] uppercase tracking-widest text-accent opacity-0 shadow-sm transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:opacity-100">
+                {'psst — read my work'}
+              </span>
+            </div>
+
+            <div className="relative h-10">
+              <span className={`${labelClass} top-2 left-[31%]`}>People</span>
+              <span className={`${labelClass} top-2 left-[69%]`}>
+                Creative
+                <br />
+                problem-solving
+              </span>
             </div>
           </div>
-
-          <div aria-hidden="true" className="relative h-10">
-            <span className={`${labelClass} top-2 left-[31%]`}>People</span>
-            <span className={`${labelClass} top-2 left-[69%]`}>
-              Creative
-              <br />
-              problem-solving
-            </span>
-          </div>
-        </div>
+        </a>
         <figcaption className="mt-4 text-center font-mono text-xs text-muted-foreground">
           {'not to scale. results may vary (in a good way).'}
         </figcaption>
       </figure>
 
-      <p className="mt-8 text-center">
-        <a
-          href="https://rachelelliswrites.wordpress.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group inline-flex flex-col items-center gap-1"
-        >
-          <span className="font-mono text-[0.65rem] uppercase tracking-widest text-muted-foreground">
-            See it in action
-          </span>
-          <span className="inline-flex items-center gap-1.5 border-b border-accent/50 pb-0.5 text-base italic text-accent transition-colors group-hover:border-accent">
-            rachelelliswrites.wordpress.com
-            <ArrowUpRight aria-hidden="true" className="size-4 shrink-0 transition-transform group-hover:rotate-45" />
-          </span>
-          <span className="sr-only">(opens in a new tab)</span>
-        </a>
-      </p>
     </section>
   )
 }
